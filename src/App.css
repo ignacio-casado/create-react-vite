@@ -2,9 +2,10 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
-
+h1{
+  align-items: center;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -26,37 +27,44 @@
     transform: rotate(360deg);
   }
 }
-
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
 
-.card {
-  padding: 2em;
-}
 
 .read-the-docs {
   color: #888;
 }
 li:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
+  opacity: 0,5 ;
 }
 li{
+  font-size: 2em;
+  line-height: 1.1;
   text-decoration:none ;
   padding: 30px;
-  align-items: center;
+  display: flex;
+ 
 }
 .home{
-  display: inline;
   will-change: filter;
   transition: filter 300ms;
 }
-class-nav{
-  background-color: aqua;
+ul{
+  display: flex;
+  flex-direction: flex;
 }
-html:hover{
-  cursor: url(assets/bart.png), auto;
-
+.card {
+  align-items: center;
 }
